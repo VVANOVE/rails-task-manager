@@ -1,2 +1,9 @@
 <h2><%= @task.title %></h2>
-<p><%= @task.details %> <%= @task.completed %></p>
+<p><%= @task.details %> </p>
+<p>
+    <% if @task.completed %>
+   <i class="fas fa-check-square"></i>
+    <% else %>
+    <i class="fas fa-square"></i>
+     <% end %>
+</p>
